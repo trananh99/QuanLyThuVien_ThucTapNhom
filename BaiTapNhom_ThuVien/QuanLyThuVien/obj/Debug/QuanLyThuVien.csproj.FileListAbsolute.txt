@@ -1,0 +1,53 @@
+D:\bai tap C#\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\bai tap C#\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\bai tap C#\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\bai tap C#\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+D:\bai tap C#\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmDangNhap.resources
+D:\bai tap C#\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMuonSach.resources
+D:\bai tap C#\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\bai tap C#\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+D:\bai tap C#\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\bai tap C#\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\bai tap C#\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\bin\Debug\BangThuVien.dll
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\bin\Debug\KetNoiDB.dll
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\bin\Debug\BangThuVien.pdb
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\bin\Debug\KetNoiDB.pdb
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmDangNhap.resources
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmDanhSachDocGia.resources
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmDanhSachTaiLieu.resources
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmHuongDan.resources
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMuonSach.resources
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmTraSach.resources
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CopyComplete
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\bai tap C#\quản lý thư viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\bin\Debug\BangThuVien.dll
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\bin\Debug\KetNoiDB.dll
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\bin\Debug\BangThuVien.pdb
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\bin\Debug\KetNoiDB.pdb
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmDangNhap.resources
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmDanhSachDocGia.resources
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmDanhSachTaiLieu.resources
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmHuongDan.resources
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMuonSach.resources
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmTraSach.resources
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CopyComplete
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\Github\QuanLyThuVien_TTN\BaiTapNhom_ThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
