@@ -31,5 +31,44 @@ namespace QuanLyThuVien
             btnLuu.Enabled = false;
         }
 
+        public void MoDK()
+        {
+            txtCMND.Enabled = txtDiaChi.Enabled = txtDienThoai.Enabled = txtEmail.Enabled = txtHoTen.Enabled = txtMaLop.Enabled = cbGT.Enabled = dtpNgaySinh.Enabled = true;
+            btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+        }
+
+        public void SetNull()
+        {
+            txtCMND.Text = txtDiaChi.Text = txtDienThoai.Text = txtEmail.Text = txtHoTen.Text = txtMa.Text = txtMaLop.Text = "";
+            txtMaBD.Text = txtTen.Text = txtGT.Text = txtDC.Text = txtLop.Text = "";
+            dtpNgaySinh.Text = DateTime.Now.ToString();
+        }
+
+        private void frmDanhSachDocGia_Load(object sender, EventArgs e)
+        {
+            dgvBanDoc.DataSource = bd.HienThiBanDoc();
+            KhoaDK();
+            SetNull();
+            chon = 0;
+        }
+
+        private void dgvBanDoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMa.Text = dgvBanDoc.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtHoTen.Text = dgvBanDoc.Rows[e.RowIndex].Cells[1].Value.ToString();
+                cbGT.Text = dgvBanDoc.Rows[e.RowIndex].Cells[2].Value.ToString();
+                dtpNgaySinh.Text = dgvBanDoc.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtCMND.Text = dgvBanDoc.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtMaLop.Text = dgvBanDoc.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txtDiaChi.Text = dgvBanDoc.Rows[e.RowIndex].Cells[6].Value.ToString();
+                txtEmail.Text = dgvBanDoc.Rows[e.RowIndex].Cells[7].Value.ToString();
+                txtDienThoai.Text = dgvBanDoc.Rows[e.RowIndex].Cells[8].Value.ToString();
+            }
+            catch { }
+        }
+
     }
 }
