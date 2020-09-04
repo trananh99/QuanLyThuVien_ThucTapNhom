@@ -55,4 +55,26 @@ namespace QuanLyThuVien
             }    
            
         }
-  
+   public void KhoiTaoTxt()
+        {
+            txtMaBD.Text = txtHoTen.Text = txtCMND.Text = txtDiaChi.Text = txtEmail.Text = txtGT.Text = txtMaLop.Text = txtNS.Text = txtSoDT.Text = "";
+        }
+       
+
+       
+        private void btnTra_Click(object sender, EventArgs e)
+        {
+            //pm.UpdateTrangThaiPM_TraSach(txtMaTL.Text);
+            int b = ctpm.TraTaiLieu(txtMaBD.Text, txtMaTL.Text);
+            if ( b>0)
+            {
+                tl.UodateSoLuongTLID_TraSach(txtMaTL.Text);
+                dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
+                if (MessageBox.Show("Trả Sách Hoàn Tất. Bạn có muốn tiếp tục?", "Question", MessageBoxButtons.YesNo) == DialogResult.No)
+                    this.Close();
+                txtMaTL.Text = txtNhanDe.Text = txtNXB.Text = txtTheLoai.Text = txttacGia.Text = "";
+            }
+            else
+                MessageBox.Show("Trả Sách Thất Bại.");
+
+        }
