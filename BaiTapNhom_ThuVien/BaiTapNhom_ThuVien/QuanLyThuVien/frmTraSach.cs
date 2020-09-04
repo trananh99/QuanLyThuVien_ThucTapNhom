@@ -101,5 +101,9 @@ namespace QuanLyThuVien
             }
         }
 
+        private void frmTraSach_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
