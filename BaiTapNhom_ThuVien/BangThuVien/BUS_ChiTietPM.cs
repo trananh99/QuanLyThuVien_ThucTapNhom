@@ -31,6 +31,18 @@ namespace BangThuVien
 
         }
 
-      
+        //tra tai lieu
+        public int TraTaiLieu( string _maBD, string _maTL)
+        {
+            SqlConnection conn  = new SqlConnection(KetNoi.connect());
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("TraTaiLieu", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@maBD", _maBD);
+            cmd.Parameters.AddWithValue("@maTL", _maTL);
+            int b = cmd.ExecuteNonQuery();
+            conn.Close();
+            return b;
+        }
     }
 }
