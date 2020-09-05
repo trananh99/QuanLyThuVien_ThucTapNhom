@@ -70,5 +70,35 @@ namespace QuanLyThuVien
             catch { }
         }
 
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            MoDK();
+            txtMa.Enabled = false;
+            SetNull();
+            chon = 1;
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            MoDK();
+            chon = 2;
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (txtMa.Text == "")
+                MessageBox.Show("Mời bạn chọn người xóa!");
+            else
+            {
+                if (DialogResult.Yes == MessageBox.Show("Bạn muốn xóa Bạn đọc này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    bd.XoaBanDoc(txtMa.Text);
+                    MessageBox.Show("Xóa thành công!");
+                    frmDanhSachDocGia_Load(sender, e);
+                    SetNull();
+                }
+            }
+        }
+
     }
 }
