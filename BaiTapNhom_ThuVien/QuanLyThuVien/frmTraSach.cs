@@ -78,3 +78,34 @@ namespace QuanLyThuVien
                 MessageBox.Show("Trả Sách Thất Bại.");
 
         }
+
+ private void dgvSachDaMuon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = new DataGridViewRow();
+            row = dgvSachDaMuon.Rows[e.RowIndex];
+            string maTL = row.Cells[0].Value.ToString();
+            DataTable dt = tl.TimKiemTaiLieu(maTL);
+            if (dt.Rows.Count > 0)
+            {
+                txtMaTL.Text = maTL;
+                txtNhanDe.Text = dt.Rows[0]["NhanDe"].ToString();
+                txttacGia.Text = dt.Rows[0]["TacGia"].ToString();
+                txtNXB.Text = dt.Rows[0]["TenNXB"].ToString();
+                txtTheLoai.Text = dt.Rows[0]["TenTheLoai"].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Không có tài liệu nay!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
