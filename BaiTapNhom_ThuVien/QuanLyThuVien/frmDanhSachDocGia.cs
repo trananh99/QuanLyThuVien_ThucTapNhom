@@ -100,5 +100,50 @@ namespace QuanLyThuVien
             }
         }
 
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (chon == 1)
+            {
+                if (txtHoTen.Text == "" || cbGT.Text == "" || dtpNgaySinh.Text == "" || txtCMND.Text == "" || txtMaLop.Text == "" || txtDiaChi.Text == "" || txtDienThoai.Text == "" || txtEmail.Text == "")
+                    MessageBox.Show("Mời nhập đầy đủ thông tin!");
+                else
+                    if (DialogResult.Yes == MessageBox.Show("Bạn có muốn thêm Độc giả này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    bd.ThemBanDoc(txtHoTen.Text, cbGT.Text, DateTime.Parse(dtpNgaySinh.Text), txtCMND.Text, txtMaLop.Text, txtDiaChi.Text, txtEmail.Text, txtDienThoai.Text);
+                    MessageBox.Show("Thêm thành công!");
+                    SetNull();
+                    frmDanhSachDocGia_Load(sender, e);
+                }
+            }
+            else if (chon == 2)
+            {
+                if (txtHoTen.Text == "" || cbGT.Text == "" || dtpNgaySinh.Text == "" || txtCMND.Text == "" || txtMaLop.Text == "" || txtDiaChi.Text == "" || txtDienThoai.Text == "" || txtEmail.Text == "")
+                    MessageBox.Show("Mời nhập đầy đủ thông tin!");
+                else
+                    if (DialogResult.Yes == MessageBox.Show("Bạn có muốn Sửa Độc giả này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    bd.SuaBanDoc(txtMa.Text, txtHoTen.Text, cbGT.Text, DateTime.Parse(dtpNgaySinh.Text), txtCMND.Text, txtMaLop.Text, txtDiaChi.Text, txtEmail.Text, txtDienThoai.Text);
+                    MessageBox.Show("Sửa thành công!");
+                    SetNull();
+                    frmDanhSachDocGia_Load(sender, e);
+                }
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            frmDanhSachDocGia_Load(sender, e);
+        }
+
+        private void txtMaBD_TextChanged(object sender, EventArgs e)
+        {
+            dgvBanDoc.DataSource = tk.TimKiemDocGia(txtMaBD.Text, txtTen.Text, txtGT.Text, dateTime.Value.Date, txtDC.Text, txtLop.Text);
+            if (dgvBanDoc.Rows.Count<=0)
+            {
+                MessageBox.Show("Không tìm thấy bạn đọc!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
     }
 }
