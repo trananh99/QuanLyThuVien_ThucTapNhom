@@ -144,6 +144,56 @@ namespace QuanLyThuVien
             }
         }
 
+        private void txtTen_TextChanged(object sender, EventArgs e)
+        {
+            dgvBanDoc.DataSource = tk.TimKiemDocGia(txtMaBD.Text, txtTen.Text, txtGT.Text, dateTime.Value.Date, txtDC.Text, txtLop.Text);
+            if (dgvBanDoc.Rows.Count <= 0)
+            {
+                MessageBox.Show("Không tìm thấy bạn đọc!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txtGT_TextChanged(object sender, EventArgs e)
+        {
+            dgvBanDoc.DataSource = tk.TimKiemDocGia(txtMaBD.Text, txtTen.Text, txtGT.Text, dateTime.Value.Date, txtDC.Text, txtLop.Text);
+            if (dgvBanDoc.Rows.Count <= 0)
+            {
+                MessageBox.Show("Không tìm thấy bạn đọc!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void dateTime_ValueChanged(object sender, EventArgs e)
+        {
+            dgvBanDoc.DataSource = tk.TimKiemDocGia(txtMaBD.Text, txtTen.Text, txtGT.Text, dateTime.Value.Date, txtDC.Text, txtLop.Text);
+            if (dgvBanDoc.Rows.Count <= 0)
+            {
+                MessageBox.Show("Không tìm thấy bạn đọc!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txtLop_TextChanged(object sender, EventArgs e)
+        {
+            dgvBanDoc.DataSource = tk.TimKiemDocGia(txtMaBD.Text, txtTen.Text, txtGT.Text, dateTime.Value.Date, txtDC.Text, txtLop.Text);
+            if (dgvBanDoc.Rows.Count <= 0)
+            {
+                MessageBox.Show("Không tìm thấy bạn đọc!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txtDC_TextChanged(object sender, EventArgs e)
+        {
+            dgvBanDoc.DataSource = tk.TimKiemDocGia(txtMaBD.Text, txtTen.Text, txtGT.Text, dateTime.Value.Date, txtDC.Text, txtLop.Text);
+            if (dgvBanDoc.Rows.Count <= 0)
+            {
+                MessageBox.Show("Không tìm thấy bạn đọc!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            bd.ExportToExcel();
+        }
+
 
     }
 }
