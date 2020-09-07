@@ -22,6 +22,14 @@ namespace QuanLyThuVien
         {
             InitializeComponent();
         }
+        public void HienThi()
+        {
+            dgvKhachHang.DataSource = kh.HienThiKhachHang();
+            for (int i = 0; i < dgvKhachHang.RowCount; i++)
+                dgvKhachHang.Rows[i].Cells[0].Value = (i + 1).ToString();
+
+            dgvSanPham.DataSource = sp.HienThiSP_LH();
+        }
         void KhoaDieuKhien()
         {
             txtTG.Enabled = txtNhanDe.Enabled = txtSoLuong.Enabled = txtNgonNgu.Enabled = cbMaTheLoai.Enabled = cbMaNXB.Enabled = txtDoMat.Enabled = false;
