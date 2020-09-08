@@ -39,6 +39,13 @@ namespace QuanLyThuVien
             txtTongTienHDB.Text = txtMaKHHDB.Text = txtNgayBanHDB.Text = "";
             dong = DongCTHD = 0;
         }
+        public void KhoiTaotxtsSP()
+        {
+            txtTenSP.Text = txtTenNSX.Text = cmbGiaBan.Text = cmbTenLH.Text = "";
+            txtSoLuongMua.Text = "";
+            txtMaSP.Text = txtSoLgHangCon.Text = txtGiaBan.Text = "";
+            dongSP = 0;
+        }
         public void SetNull()
         {
             txtTK.Text = "";
