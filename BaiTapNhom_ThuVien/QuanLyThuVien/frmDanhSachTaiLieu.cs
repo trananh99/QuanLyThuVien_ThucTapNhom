@@ -30,6 +30,15 @@ namespace QuanLyThuVien
 
             dgvSanPham.DataSource = sp.HienThiSP_LH();
         }
+        public void KhoiTaotxtsKH()
+        {
+            txttenKH.Text = txtDC.Text = txtGhichu.Text = txtSoDT.Text = txtMaKH.Text = "";
+            cmbLoaiKH.Text = "";
+            cmbGioiTinh.Text = "";
+            MaKHNew = ""; MaHDB = "";
+            txtTongTienHDB.Text = txtMaKHHDB.Text = txtNgayBanHDB.Text = "";
+            dong = DongCTHD = 0;
+        }
         void KhoaDieuKhien()
         {
             txtTG.Enabled = txtNhanDe.Enabled = txtSoLuong.Enabled = txtNgonNgu.Enabled = cbMaTheLoai.Enabled = cbMaNXB.Enabled = txtDoMat.Enabled = false;
