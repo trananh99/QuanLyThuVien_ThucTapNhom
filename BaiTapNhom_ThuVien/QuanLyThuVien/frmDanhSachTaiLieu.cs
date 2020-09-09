@@ -39,6 +39,24 @@ namespace QuanLyThuVien
             txtTongTienHDB.Text = txtMaKHHDB.Text = txtNgayBanHDB.Text = "";
             dong = DongCTHD = 0;
         }
+        public void SetNull()
+        {
+            txtTK.Text = "";
+            txtMaSP.Text = "";
+            txtTenSP.Text = "";
+            txtNSX.Text = "";
+            txtMoTa.Text = "";
+            pictureBox1.Image = null;
+        }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            SetNull();
+            tenAnh = "";
+            txtLoiNhuan.Text = "";
+            cboTK.Enabled = false;
+            txtTK.Enabled = false;
+            //btnLuu.Enabled = true;
+        }
         void KhoaDieuKhien()
         {
             txtTG.Enabled = txtNhanDe.Enabled = txtSoLuong.Enabled = txtNgonNgu.Enabled = cbMaTheLoai.Enabled = cbMaNXB.Enabled = txtDoMat.Enabled = false;
