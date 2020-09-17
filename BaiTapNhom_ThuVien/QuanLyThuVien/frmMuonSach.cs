@@ -60,8 +60,20 @@ namespace QuanLyThuVien
 
         public void Show(DataGridView dgv)
         {
-           
-        }
+               int i = 0;
+               dgv.RowCount = listTLMuon.Count;
+               for (i = 0; i < listTLMuon.Count; i++)
+               {
+                    dgv.Rows[i].Cells[0].Value = listTLMuon[i].Matl.ToString();
+                    dgv.Rows[i].Cells[1].Value = listTLMuon[i].Nhande.ToString();
+                    dgv.Rows[i].Cells[2].Value = listTLMuon[i].Tacgia.ToString();
+                    dgv.Rows[i].Cells[3].Value = listTLMuon[i].Soluong.ToString();
+                    dgv.Rows[i].Cells[4].Value = listTLMuon[i].Domat.ToString();
+                    dgv.Rows[i].Cells[5].Value = listTLMuon[i].Ngonngu.ToString();
+                    dgv.Rows[i].Cells[6].Value = listTLMuon[i].MaTheLoai.ToString();
+                    dgv.Rows[i].Cells[7].Value = listTLMuon[i].MaNXB.ToString();
+               }
+          }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
