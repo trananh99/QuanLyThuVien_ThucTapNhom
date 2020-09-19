@@ -77,7 +77,28 @@ namespace QuanLyThuVien
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-        }
+               string MaPM = "";
+               DataTable dt = new DataTable();
+               dt = pm.ThemPhieuMuon(txtMaBD.Text);
+               MaPM = dt.Rows[0]["MaPM"].ToString();
+
+               for (int i = 0; i < dgvSachMuon.Rows.Count; i++)
+               {
+
+                    string MaSach = dgvSachMuon.Rows[i].Cells[0].Value.ToString();
+                    int b = ctpm.ThemCTPM(MaPM, MaSach, DateTime.Now, DateTime.Now.AddMonths(6), "");
+                    if (b == 0)
+                         MessageBox.Show("Thêm Thất Bại Cuốn :" + dgvSachMuon.Rows[i].Cells[0].Value.ToString());
+                    tl.UodateSoLuongDauSachID(dgvSachMuon.Rows[i].Cells[0].Value.ToString());
+               }
+
+               if (MessageBox.Show("Mượn Thành công! Có Muốn kết thúc??", "Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    this.Close();
+               else
+               {
+                    dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
+               }
+          }
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
