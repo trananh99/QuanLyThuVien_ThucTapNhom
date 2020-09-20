@@ -102,8 +102,15 @@ namespace QuanLyThuVien
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-           
-        }
+               txtMaTL.Text = "";
+
+               for (int i = 0; i < dgvSachMuon.Rows.Count; i++)
+               {
+
+                    dgvSachMuon.Rows.Clear();
+               }
+               dgvSachMuon.Refresh();
+          }
 
         private void txtMaBD_TextChanged(object sender, EventArgs e)
         {
