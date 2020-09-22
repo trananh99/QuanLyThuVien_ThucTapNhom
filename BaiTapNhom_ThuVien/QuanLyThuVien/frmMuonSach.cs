@@ -114,7 +114,7 @@ namespace QuanLyThuVien
 
         private void txtMaBD_TextChanged(object sender, EventArgs e)
         {
-           
-        }
+               dgvSachDaMuon.DataSource = bd.ThongKeSachDaMuonTheoID(txtMaBD.Text);
+          }
     }
 }
